@@ -1,0 +1,97 @@
+{
+    "id": 2,
+    "username": "lestertje",
+    "status": 1,
+    "general_settings": {
+        "affiliate_fee": {
+            "amount": 10,
+            "currency": "EUR"
+        },
+        "is_test": 0
+    },
+    "additional_info": {
+        "ecommerce_platform": 0,
+        "phone": "1234"
+    },
+    "shipment_estimates": [
+        {
+            "region": "NL",
+            "estimate": 1,
+            "package_type": 2
+        },
+        {
+            "region": "NL",
+            "estimate": 1,
+            "package_type": 1
+        },
+        {
+            "region": "EU",
+            "estimate": 1,
+            "package_type": 1
+        },
+        {
+            "region": "CD",
+            "estimate": 1,
+            "package_type": 1
+        }
+    ],
+    "password_reset_hash": null,
+    "password_reset_hash_expires": null,
+    "password_hashed_bcrypt": null,
+    "platform_id": 1,
+    "terms_agreed": true,
+    "origin_id": 1,
+    "delivery_address": null,
+    "gender": "mr",
+    "first_name": "Lester",
+    "last_name": "van Egmond",
+    "email": "lester@lester.nl",
+    "users": [
+        {
+            "id": 2,
+            "account_id": 2,
+            "username": "lestertje",
+            "status": "active",
+            "created": "2019-11-26 14:13:52",
+            "remember_token": null,
+            "contact": {
+                "id": 3,
+                "gender": "mr",
+                "first_name": "Lester",
+                "last_name": "van Egmond",
+                "email": "lester@lester.nl",
+                "phone": "1234",
+                "street": "",
+                "number": "",
+                "number_suffix": "",
+                "postal_code": "",
+                "city": "",
+                "cc": null,
+                "street_additional_info": "",
+                "company": null,
+                "region": "",
+                "box_number": ""
+            }
+        }
+    ],
+    "shops": [],
+    "contact": {
+        "id": 2,
+        "gender": "mr",
+        "first_name": "Lester",
+        "last_name": "van Egmond",
+        "email": "lester@lester.nl",
+        "phone": "1234",
+        "street": "",
+        "number": "",
+        "number_suffix": "",
+        "postal_code": "",
+        "city": "",
+        "cc": null,
+        "street_additional_info": "",
+        "company": null,
+        "region": "",
+        "box_number": ""
+    },
+    "carrier_references": []
+}

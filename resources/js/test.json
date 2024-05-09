@@ -1,0 +1,17 @@
+[
+    {
+        "region": "NL",
+        "estimate": 6,
+        "package_type": 1
+    },
+    {
+        "region": "EU",
+        "estimate": 0,
+        "package_type": 1
+    },
+    {
+        "region": "CD",
+        "estimate": 0,
+        "package_type": 1
+    }
+]
