@@ -20,4 +20,36 @@ cp .env.example .env
 
 ## Make connection with database
 
+### Note: If you are using PHP storm, you can use the build in database
+
 Change in the env file the variables with the right values.
+
+```bash
+DB_CONNECTION=sqlite
+DB_HOST= Your values
+DB_PORT= Your values
+DB_DATABASE= Your values
+DB_USERNAME= Your values
+DB_PASSWORD= Your values
+```
+
+## Generate Applixcation key
+
+```bash 
+php artisan key:generate
+```
+
+## Migrate and seed your database
+
+### Note: In the DatabaseSeeder.php you can change the amount of fake tests
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+
+## Start the Application
+
+```bash
+php artisan serve
+```
