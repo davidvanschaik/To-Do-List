@@ -6,6 +6,7 @@ namespace App\repositories;
 
 use App\Models\Task;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class TaskRepository
 {
@@ -28,8 +29,9 @@ class TaskRepository
 
     public function update($id)
     {
-        return Task::where('id', '=', $id)
-            ->update(['description' => $_POST['description']]);
+        DB::table('task')->get();
+//        return Task::where('id', '=', $id)
+//            ->update(['description' => $_POST['description']]);
     }
 
     public function complete($id)

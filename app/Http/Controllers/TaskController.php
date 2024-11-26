@@ -13,7 +13,7 @@ class TaskController extends Controller
         private readonly TaskRepository $repo,
     ) { }
 
-    public function index(): View
+    public function index(): View | string
     {
         return view('tasks', [
             'tasks' => $this->repo->fetchAll(),
@@ -28,10 +28,10 @@ class TaskController extends Controller
             'is_completed' => false,
         ]);
 
-        return redirect(route('tasks.index'));
+        redirect(route('tasks.index'));
     }
 
-    public function show($id): View
+    public function show($id): View | string
     {
         return view('show', [
             'task' => $this->repo->selectOne($id),
@@ -41,24 +41,24 @@ class TaskController extends Controller
     public function update($id): RedirectResponse
     {
         $this->repo->update($id);
-        return redirect(route('tasks.index'));
+        redirect(route('tasks.index'));
     }
 
     public function complete($id)
     {
         $this->repo->complete($id);
-        return redirect(route('tasks.index'));
+        redirect(route('tasks.index'));
     }
 
     public function uncomplete($id)
     {
         $this->repo->uncomplete($id);
-        return redirect(route('tasks.index'));
+        redirect(route('tasks.index'));
     }
 
     public function delete($id): RedirectResponse
     {
         $this->repo->delete($id);
-        return redirect(route('tasks.index'));
+        redirect(route('tasks.index'));
     }
 }
